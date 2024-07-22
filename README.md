@@ -14,3 +14,6 @@ For Conda Users -
 Since I am using Accelerate for DDP and FSDP, it is possible but hard to run it from the notebooks. So for the DDP and FSDP variants I have added `.py` files which can be run using `accelerate launch` commands.
 
 For FSDP - `accelerate launch --config_file fsdp_config.yaml train_model_fsdp.py`
+For DDP - `accelerate launch train_model_ddp.py`
+
+All the file names clearly showcase the variant they present!
