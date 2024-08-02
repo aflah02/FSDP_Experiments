@@ -97,7 +97,7 @@ LOGGING_STEPS = 10
 
 ## Training Duration Related
 
-MAX_STEPS = 1000
+MAX_STEPS = 100
 
 ## Optimizer Related
 
@@ -150,7 +150,7 @@ trainer = Trainer(
 
 # Configure Wandb project and run
 
-wandb.init(project=WANDB_PROJECT, name=WANDB_RUN_NAME)
+wandb.init(project=WANDB_PROJECT, name=WANDB_RUN_NAME, group = 'DDP')
 wandb.config.update(training_args)
 
 
